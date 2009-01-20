@@ -1,0 +1,9 @@
+log/*.log
+tmp/**/*
+.DS_Store
+doc/api
+doc/app
+doc/guides
+public/stylesheets/all.css
+public/chakra.html
+public/chakra/*
