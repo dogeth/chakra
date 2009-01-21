@@ -1,0 +1,6 @@
+<h1>Select a C</h1>
+<% for chakra in @chakras %>
+	<% link_to(:action => 'show', :chakra => chakra.name) do %>
+		<%= chakra.name %>
+	<% end %>
+<% end %>

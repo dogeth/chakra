@@ -1,0 +1,33 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+
+one:
+
+  name: MyString
+
+  number: 1
+
+  blurb: MyString
+
+  tag: MyString
+
+  modern_energy: MyString
+
+  do_this: MyString
+
+
+two:
+
+  name: MyString
+
+  number: 1
+
+  blurb: MyString
+
+  tag: MyString
+
+  modern_energy: MyString
+
+  do_this: MyString
+
+
