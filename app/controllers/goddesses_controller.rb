@@ -1,12 +1,11 @@
 class GoddessesController < ApplicationController
-#kkk caches_page
-    def show
-  	if params[:goddess].to_i > 0 
-  		@goddess = Goddess.find_by_number(params[:goddess])
-  		redirect_to :goddess => @goddess.name
-	end
-
+  caches_page :show
+  def show
 	@goddess = Goddess.find_by_name(params[:goddess])
+    unless @goddess 
+		logger.error("Attempt to access invalid goddess: '#{params[:goddess]}'") 
+	    redirect_to :controller => 'chakras', :action => 'index'
+    end 
   end
 
 end

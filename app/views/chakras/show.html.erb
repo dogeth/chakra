@@ -2,12 +2,14 @@
 <p>
 <%= @chakra.description %>	
 </p>
-Select a number...
+<p>
+<%= @chakra.question %>	
+</p>
 <p>
 <% for g in @chakra.goddesses %>
 	<% link_to(:controller => 'goddesses', :action => 'show', :goddess => g.name) do %>
 		<%= g.number %>
 	<% end %>
+	<br />
 <% end %>
-	
 </p>

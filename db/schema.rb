@@ -14,6 +14,7 @@ ActiveRecord::Schema.define(:version => 20090121034059) do
   create_table "chakras", :force => true do |t|
     t.string   "name"
     t.string   "description"
+    t.string   "question"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

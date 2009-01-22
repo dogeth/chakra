@@ -1,2 +1,12 @@
-<%= params[:goddess] %><br />
-<%=h @kkk %>
+<h1><%= h "#{@goddess.name} : #{@goddess.tag}" %></h1>
+<p>
+<%= @goddess.description %>	
+</p>
+<h2>Modern Energy</h2>
+<p>
+<%= @goddess.modern_energy %>	
+</p>
+<h2>Do This</h2>
+<p>
+<%= @goddess.do_this %>	
+</p>

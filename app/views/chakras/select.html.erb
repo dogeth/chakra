@@ -1,6 +1,9 @@
-<h1>Select a C</h1>
+<h1>Which Goddess Energy is With You Now?</h1>
+<p>Take a minute to complete this simple exercise to determine which ancient goddess energy is inspiring you today. By being conscious of that energy, you will be able to harness it more effectively in order to attain your highest ideals when dealing with those around you.<p>
+<p>Remove yourself from distractions while you look at each of the pictures below. Take all the time you need to work out which particular shape ‘speaks’ to you the loudest. Find that image on the following page to read about which goddess energy is working with you at this moment.</p>	
 <% for chakra in @chakras %>
 	<% link_to(:action => 'show', :chakra => chakra.name) do %>
 		<%= chakra.name %>
 	<% end %>
+	<br />
 <% end %>
