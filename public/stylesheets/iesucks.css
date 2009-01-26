@@ -1,0 +1,11 @@
+/** 
+IE Styles - fixes for IE's crappiness.
+2009-01-21:Created by Lachlan.
+**/
+.header .brand .name a{padding-left:35px;background:transparent url(../images/logo_30x18.gif) no-repeat top left;zoom:1;}
+.return-journey{background:transparent url(../images/return_journey_16x16.gif) no-repeat top center;}
+.add-favourite{background:transparent url(../images/add_favourite_16x16.gif) no-repeat top center;}
+.remove-favourite{background:transparent url(../images/remove_favourite_16x16.gif) no-repeat top center;}
+.content .list > li > *,
+.button{zoom:1;}
+.container{display:none;}
