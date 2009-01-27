@@ -1,7 +1,7 @@
 <p>Remove yourself from distractions while you look at each of the pictures below. Take all the time you need to work out which particular shape ‘speaks’ to you the loudest. Find that image on the following page to read about which goddess energy is working with you at this moment.</p>	
 <div id="canvas">
 <% for chakra in @chakras %>
-	<% link_to({:action => 'show', :chakra => chakra.name}, :class => 'shape') do %>
+	<% link_to({:action => 'show', :chakra => chakra.name}, :class => 'shape hide') do %>
 		<img src="<%= "images/#{chakra.name}.png" %>" />
 	<% end %>
 <% end %>
