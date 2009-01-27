@@ -7,8 +7,8 @@ $(function() {
   	*/
   	var objects= $("#canvas .move"); //Get the objects to move about the canvas
   	if (objects.length > 0) {
-  		var steps = 140;
-  		var turns = 5;
+  		var steps = 140;												//Number of points to use in the circle
+  		var turns = 5;													//Number of complete rotations
   		
   		//Initialisation for the circle
 	  	var x_pos = new Array(); var y_pos = new Array();				//points around the circle
