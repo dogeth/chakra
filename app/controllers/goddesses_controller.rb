@@ -6,6 +6,7 @@ class GoddessesController < ApplicationController
 		logger.error("Attempt to access invalid goddess: '#{params[:goddess]}'") 
 	    redirect_to :controller => 'chakras', :action => 'index'
     end 
+    render :layout => 'chakras'
   end
 
 end

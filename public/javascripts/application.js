@@ -3,51 +3,55 @@
 $(function() {
 
   	/*
-    	Initialise for the Circle Activity
+    	Rotation of objects on a canvas
   	*/
-  	var shapes= $(".shape")
-  	var xoffset = new Array();
-  	var yoffset = new Array();
-  	var maxImageWidth = 0; var maxImageHeight = 0;
-  	for (var j = 0; j < shapes.length ; j++) {
-    	var w = parseInt($(shapes[j]).width()); var h = parseInt($(shapes[j]).height());
-    	if (w > maxImageWidth) {maxImageWidth = w}; if (h > maxImageHeight) {maxImageHeight = h};
-    	xoffset[j] = Math.floor(w / 2); yoffset[j] = Math.floor(h / 2);
-  	};
-  	var maxImageLength = (maxImageWidth > maxImageHeight) ? maxImageWidth : maxImageHeight;
+  	var objects= $("#canvas .move"); //Get the objects to move about the canvas
+  	if (objects.length > 0) {
+  		var steps = 140;
+  		var turns = 5;
+  		
+  		//Initialisation for the circle
+	  	var x_pos = new Array(); var y_pos = new Array();				//points around the circle
+	  	var x_offset = new Array(); var y_offset = new Array(); 		//store offsets for each object (may be different sizes)
+	  	var position = new Array();										//where each object is in the circle
+	  	var canvas_width = parseInt($("#canvas").width()); var canvas_height = parseInt($("#canvas").height());
 
-  	var canvasWidth = parseInt($("#canvas").width()); var canvasHeight = parseInt($("#canvas").height());
-  	var maxCanvasLength = (canvasWidth > canvasHeight) ? canvasWidth : canvasHeight;
+		//Get Offsets, and Maximum object width and height
+	  	var max_object_width = 0; var max_object_height = 0; 				
+  		for (var i = 0; i < objects.length ; i++) {
+    		var w = parseInt($(objects[i]).width()); var h = parseInt($(objects[i]).height());
+    		if (w > max_object_width) {max_object_width = w}; if (h > max_object_height) {max_object_height = h};
+    		x_offset[i] = Math.floor(w / 2); y_offset[i] = Math.floor(h / 2);
+  		}
 
-  	var radius = maxCanvasLength / 2 - Math.floor(maxImageLength / 2); 
-  	var steps = 140;
-  	var centerX = Math.floor(maxCanvasLength / 2);
-  	var centerY = Math.floor(maxCanvasLength / 2);
-  	var xValues = new Array();
-  	var yValues = new Array();
+	  	var max_object_length = (max_object_width > max_object_height) ? max_object_width : max_object_height;
+  		var max_canvas_length = (canvas_width > canvas_height) ? canvas_width : canvas_height;
 
-  	for (var i = 0; i < steps; i++) {
-      xValues[i] = Math.floor(centerX + radius * Math.cos(2 * Math.PI * i / steps)) ;
-      yValues[i] = Math.floor(centerY + radius * Math.sin(2 * Math.PI * i / steps)) ;
-  	};
+		//Calculate points of a circle around the canvas
+	  	var radius = max_canvas_length / 2 - Math.floor(max_object_length / 2); 
+	  	var x_center = Math.floor(canvas_width / 2);
+  		var y_center = Math.floor(canvas_height / 2);
+	  	for (var i = 0; i < steps; i++) {
+    	  x_pos[i] = Math.floor(x_center + radius * Math.cos(2 * Math.PI * i / steps)) ;
+	      y_pos[i] = Math.floor(y_center + radius * Math.sin(2 * Math.PI * i / steps)) ;
+  		}
 
-  	var position = new Array();
-  	for (var j = 0; j < shapes.length ; j++) {
-    	position[j] = Math.floor((steps * j) / shapes.length);
-    	x = (xValues[position[j]] - xoffset[j]) ; y = (yValues[position[j]] - yoffset[j]);
-    	$(shapes[j]).css({left: x + "px", top: y + "px"}); //kkk .show();	
-  	};
+		//Move the objects into starting positions and make visible
+  		for (var j = 0; j < objects.length ; j++) {
+    		position[j] = Math.floor((steps * j) / objects.length);
+    		x = (x_pos[position[j]] - x_offset[j]) ; y = (y_pos[position[j]] - y_offset[j]);
+    		$(objects[j]).css({left: x + "px", top: y + "px"}).show();
+	  	}
 
-   	function rotate_shapes() {
-    	for (var i = 0; i < steps * 5 ; i++) {
-      		for (var j = 0; j < shapes.length ; j++) {
-        		position[j] = position[j] + 1;
-        		if (position[j] >= steps) {position[j] = 0}; 
-        		x = (xValues[position[j]] - xoffset[j]) ; y = (yValues[position[j]] - yoffset[j]);
-        		$(shapes[j]).animate({left: x + "px", top: y + "px"}, 200);
-      		}
-    	}
-   	};
+		//Start the rotation		
+    	for (var i = 0; i < steps * turns ; i++) {
+	  		for (var j = 0; j < objects.length ; j++) {
+    			position[j] = position[j] + 1;
+    			if (position[j] >= steps) {position[j] = 0}; 
+    			x = (x_pos[position[j]] - x_offset[j]) ; y = (y_pos[position[j]] - y_offset[j]);
+        		$(objects[j]).animate({left: x + "px", top: y + "px"}, 200);
+	  		}
+		}
+	}
 
-    rotate_shapes();
 });

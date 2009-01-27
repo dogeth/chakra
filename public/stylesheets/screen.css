@@ -150,7 +150,8 @@ h2 a:link,h2 a:visited,h2 a:hover{display:inline;}
 .disabled{background-color:#efefef;color:#666;}
 .hide{display:none;}
 
-.shape {position: absolute; border: none; background-color:none}
-.shape img {border: none;display:none;}
+.move {position: absolute; border: none; background-color:none;}
+.shape img {border: none;}
+.numeric {font-size:5em;}
 #canvas {position: relative; width: 320px;height: 320px;border: 1px black solid;margin-left: auto;margin-right: auto;}
 

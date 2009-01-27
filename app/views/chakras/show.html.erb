@@ -1,15 +1,15 @@
-<h1><%= @chakra.name %></h1>
+<h1><img src="<%= "/images/#{@chakra.name}.png" %>" alt="<%="#{@chakra.name}" %>" /><%= @chakra.name %></h1>
 <p>
 <%= @chakra.description %>	
 </p>
 <p>
 <%= @chakra.question %>	
 </p>
-<p>
+<div id="canvas">
 <% for g in @chakra.goddesses %>
-	<% link_to(:controller => 'goddesses', :action => 'show', :goddess => g.name) do %>
+	<% link_to({:controller => 'goddesses', :action => 'show', :goddess => g.name}, :class => 'move numeric hide') do %>
 		<%= g.number %>
 	<% end %>
 	<br />
 <% end %>
-</p>
+</div>
