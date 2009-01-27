@@ -14,7 +14,10 @@ $(function() {
 	  	var x_pos = new Array(); var y_pos = new Array();				//points around the circle
 	  	var x_offset = new Array(); var y_offset = new Array(); 		//store offsets for each object (may be different sizes)
 	  	var position = new Array();										//where each object is in the circle
-	  	var canvas_width = parseInt($("#canvas").width()); var canvas_height = parseInt($("#canvas").height());
+	  	//Hard-coding size of the canvas for now, jQuert not picking up the correct width and height from the style after a refresh
+	  	//var canvas_width = parseInt($("#canvas").width()); var canvas_height = parseInt($("#canvas").height());
+	  	var canvas_width = 320; var canvas_height = 320;
+	  	
 
 		//Get Offsets, and Maximum object width and height
 	  	var max_object_width = 0; var max_object_height = 0; 				
