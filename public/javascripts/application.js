@@ -11,9 +11,11 @@ $(function() {
   		var turns = 5;													//Number of complete rotations
   		
   		//Initialisation for the circle
-	  	var x_pos = new Array(); var y_pos = new Array();				//points around the circle
-	  	var x_offset = new Array(); var y_offset = new Array(); 		//store offsets for each object (may be different sizes)
-	  	var position = new Array();										//where each object is in the circle
+	  	var x_pos = new Array(steps); var y_pos = new Array(steps);		//points around the circle
+	  	var x_offset = new Array(objects.length); 
+	  	var y_offset = new Array(objects.length); 						//store offsets for each object (may be different sizes)
+	  	var position = new Array(objects.length);						//where each object is in the circle
+	  	
 	  	//Hard-coding size of the canvas for now, jQuert not picking up the correct width and height from the style after a refresh
 	  	//var canvas_width = parseInt($("#canvas").width()); var canvas_height = parseInt($("#canvas").height());
 	  	var canvas_width = 320; var canvas_height = 320;
