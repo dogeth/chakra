@@ -8,4 +8,11 @@ IE Styles - fixes for IE's crappiness.
 .remove-favourite{background:transparent url(../images/remove_favourite_16x16.gif) no-repeat top center;}
 .content .list > li > *,
 .button{zoom:1;}
+.content .list > li h1,
+.content .list > li h2,
+.content .list > li h3,
+.content .list > li h4,
+.content .list > li h5,
+.content .list > li h6{font-weight:bold;}
+.content dl.panel dd.item {padding:0.58823em;margin:0;}
 .container{display:none;}
