@@ -1,10 +1,7 @@
-<h1><img src="<%= "/images/#{@chakra.name}.png" %>" alt="<%="#{@chakra.name}" %>" /><%= @chakra.name %></h1>
-<p>
-<%= @chakra.description %>	
-</p>
-<p>
-<%= @chakra.question %>	
-</p>
+<div class="<%="#{@chakra.name.downcase}"%>">
+<h2><%= @chakra.name.capitalize %></h2>
+<p><%= @chakra.description %></p>
+<p><%= @chakra.question %></p>
 <div id="canvas">
 <% for g in @chakra.goddesses %>
 	<% link_to({:controller => 'goddesses', :action => 'show', :goddess => g.name}, :class => 'move numeric hide') do %>
@@ -12,4 +9,5 @@
 	<% end %>
 	<br />
 <% end %>
+</div>
 </div>

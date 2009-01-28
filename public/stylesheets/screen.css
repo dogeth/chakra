@@ -150,6 +150,14 @@ h2 a:link,h2 a:visited,h2 a:hover{display:inline;}
 .disabled{background-color:#efefef;color:#666;}
 .hide{display:none;}
 
+div.base {background:transparent url(../images/base.png) top right no-repeat;padding-top:0;padding-bottom:0;}
+div.sacral {background:transparent url(../images/sacral.png) top right no-repeat;padding-top:0;padding-bottom:0;}
+div.solar {background:transparent url(../images/solar.png) top right no-repeat;padding-top:0;padding-bottom:0;}
+div.heart {background:transparent url(../images/heart.png) top right no-repeat;padding-top:0;padding-bottom:0;}
+div.throat {background:transparent url(../images/throat.png) top right no-repeat;padding-top:0;padding-bottom:0;}
+div.brow {background:transparent url(../images/brow.png) top right no-repeat;padding-top:0;padding-bottom:0;}
+div.crown {background:transparent url(../images/crown.png) top right no-repeat;padding-top:0;padding-bottom:0;}
+
 .move{position: absolute; border: none; background-color:none;}
 .shape img{border: none;}
 .numeric{font-size:5em;}

@@ -1,12 +1,8 @@
-<h1><%= h "#{@goddess.name} : #{@goddess.tag}" %></h1>
-<p>
-<%= @goddess.description %>	
-</p>
-<h2>Modern Energy</h2>
-<p>
-<%= @goddess.modern_energy %>	
-</p>
-<h2>Do This</h2>
-<p>
-<%= @goddess.do_this %>	
-</p>
+<div class="<%="#{@goddess.chakra.name.downcase}"%>">
+<h2><%= h "#{@goddess.name.capitalize} :: #{@goddess.tag}" %></h2>
+<p><%= h @goddess.description %></p>
+<h3>Modern Energy</h3>
+<p><%= h @goddess.modern_energy %></p>
+<h3>Do This</h3>
+<p><%= h @goddess.do_this %></p>
+</div>
