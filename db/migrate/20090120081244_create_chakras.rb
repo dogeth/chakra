@@ -8,6 +8,8 @@ class CreateChakras < ActiveRecord::Migration
       
       t.string :question
 
+      t.string :colour
+
       t.timestamps
 
     end

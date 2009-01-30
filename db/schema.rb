@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(:version => 20090121034059) do
     t.string   "name"
     t.string   "description"
     t.string   "question"
+    t.string   "colour"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

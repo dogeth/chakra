@@ -79,7 +79,6 @@ h2 a:link,h2 a:visited,h2 a:hover{display:inline;}
 .header *,.header a:link,.header a:active,.header a:visited,
 .footer *,.footer a:link,.footer a:active,.footer a:visited{font-family:inherit;font-weight:bold;color:white;}
 .header .brand .name{color:white;font-family:inherit;font-size:1.66667em;margin:0;padding:0;}
-.header .brand .name a{padding-left:35px;background:transparent url(../images/logo_30x18.png) no-repeat top left;}
 .header .button{font-size:0.75em;text-align:center;background-color:transparent;background-position:top center;background-repeat:no-repeat;border:none;height:auto;margin:0;padding:16px 0 0 0;white-space:normal;}
 .header .button:hover{background-color:transparent;}
 .nav{text-align:right;background:#bababa url(../images/gradient_e3e3e3_bababa_2x30.png) repeat-x top left;font-weight:bold;margin:0;}
@@ -149,13 +148,13 @@ h2 a:link,h2 a:visited,h2 a:hover{display:inline;}
 .content .list > li > *{padding:0.58823em;display:block;}
 .disabled{background-color:#efefef;color:#666;}
 .hide{display:none;}
-div.base {background:transparent url(../images/base.png) top right no-repeat;padding-top:0;padding-bottom:0;}
-div.sacral {background:transparent url(../images/sacral.png) top right no-repeat;padding-top:0;padding-bottom:0;}
-div.solar {background:transparent url(../images/solar.png) top right no-repeat;padding-top:0;padding-bottom:0;}
-div.heart {background:transparent url(../images/heart.png) top right no-repeat;padding-top:0;padding-bottom:0;}
-div.throat {background:transparent url(../images/throat.png) top right no-repeat;padding-top:0;padding-bottom:0;}
-div.brow {background:transparent url(../images/brow.png) top right no-repeat;padding-top:0;padding-bottom:0;}
-div.crown {background:transparent url(../images/crown.png) top right no-repeat;padding-top:0;padding-bottom:0;}
+div.base {background:transparent url(../images/blue_butterfly.gif) top right no-repeat;padding-top:0;padding-bottom:0;}
+div.sacral {background:transparent url(../images/lightblue_butterfly.gif) top right no-repeat;padding-top:0;padding-bottom:0;}
+div.solar {background:transparent url(../images/purple_butterfly.gif) top right no-repeat;padding-top:0;padding-bottom:0;}
+div.heart {background:transparent url(../images/red_butterfly.gif) top right no-repeat;padding-top:0;padding-bottom:0;}
+div.throat {background:transparent url(../images/green_butterfly.gif) top right no-repeat;padding-top:0;padding-bottom:0;}
+div.brow {background:transparent url(../images/orange_butterfly.gif) top right no-repeat;padding-top:0;padding-bottom:0;}
+div.crown {background:transparent url(../images/yellow_butterfly.gif) top right no-repeat;padding-top:0;padding-bottom:0;}
 .move{position: absolute; border: none; background-color:none;}
 .shape img{border: none;}
 .numeric{font-size:5em;}
