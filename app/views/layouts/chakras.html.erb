@@ -5,7 +5,7 @@
   <title><%="#{SITE_NAME}" %></title>
 <meta name="title" content="<%="#{SITE_NAME}" %>" />
 <meta name="description" content="<%= h ABOUT_BLURB %>" />
-<meta name="keywords" content="kkk" />
+<meta name="keywords" content="chakra goddess oracle iphone game quiz" />
 <link rel="apple-touch-icon" href="images/logo_70x70.png" />
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
 <%= javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js' -%>
@@ -29,7 +29,7 @@
 		<div class="brand"> 
 			<h1 class="name" >
 				<% link_to(:controller => "chakras", :action => 'index') do %>
-					<img src="<%= "/images/header_320x52.png" %>" alt="The Chakra Goddess Oracle" />
+					<img src="<%= "/images/header_320x52.png" %>" alt="<%= SITE_NAME %>" />
 				<% end %>
 			</h1>
 		</div>
@@ -41,6 +41,15 @@
 		More goddess games on your mobile at <a href="http://igoddess.mobi">igoddess.mobi</a>
 	</div>
 </div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7262835-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
 </body>
 </html>
 <head>

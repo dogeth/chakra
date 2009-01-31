@@ -75,7 +75,7 @@ Rails::Initializer.run do |config|
     
   SITE_NAME = "The Chakra Goddess Oracle"
   
-  ABOUT_BLURB = "This is the about blurb...kkk"
+  ABOUT_BLURB = "The Chakra Goddess Oracle"
   
   
 end
