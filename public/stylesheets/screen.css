@@ -70,12 +70,12 @@ Useful classes defined in this stylesheet:.panel :displays a ul/ol/dl as a round
 .list :displays a ul/ol/dl as a full-bleed iPhone-like list
 2008-12-29:Created by Lachlan.
 **/
-html,body{background:rgb(197,204,211) url(../images/background_42x42.png) top left repeat;margin:0;padding:0;-webkit-text-size-adjust:none;}
+html,body{background:#efdfdf top left repeat;margin:0;padding:0;-webkit-text-size-adjust:none;}
 html.list,html.list body{background:white;}
 body{font-family:Helvetica,Arial,sans-serif;text-align:left;color:black;margin:0;padding:0;}
 a:link,a:visited,a:hover{display:block;text-decoration:none;color:black;}
 h2 a:link,h2 a:visited,h2 a:hover{display:inline;}
-.header,.footer{background:#313131 url(../images/header_2x44.png) top left repeat-x;padding:0.83333em;margin:0;font-family:inherit;font-weight:bold;color:white;}
+.header,.footer{background:#613131 top left repeat-x;padding:0.83333em;margin:0;font-family:inherit;font-weight:bold;color:white;}
 .header *,.header a:link,.header a:active,.header a:visited,
 .footer *,.footer a:link,.footer a:active,.footer a:visited{font-family:inherit;font-weight:bold;color:white;}
 .header .brand .name{color:white;font-family:inherit;font-size:1.66667em;margin:0;padding:0;}
@@ -103,7 +103,8 @@ h2 a:link,h2 a:visited,h2 a:hover{display:inline;}
 .content > h4.panel,
 .content > h5.panel,
 .content > h6.panel{color:black;}
-.content > p{margin:0 0.83333em 0 0.83333em;padding:0;font-family:inherit;font-size:1.41667em;font-weight:normal;text-shadow:white 0 0.08333em 0;color:rgb(76,86,108);text-align:center;background-color:transparent;border:none;}
+.content > p{margin:0 0.83333em 0 0.83333em;padding:0;font-family:inherit;font-size:1.41667em;font-weight:normal;color:black;text-align:center;background-color:transparent;border:none;}
+.content > *:first-child{margin-top:0.83333em;}
 .content input{margin:0;border:none;background:none;font-size:1em;font-weight:normal;width:10em;}
 .content .panel{font-size:1.41667em;background-color:white;display:block;margin:0.52941em 0;padding:0;border:0.05882em solid rgb(171,171,171);-webkit-border-radius:0.47058em;-moz-border-radius:0.47058em;border-radius:0.47058em;}
 .content .panel > *,
@@ -158,6 +159,6 @@ div.crown{background:transparent url(../images/yellow_butterfly.gif) top right n
 .move{position:absolute;border:none;background-color:none;}
 .shape img{border:none;}
 .numeric{font-size:5em;}
-#canvas{position:relative;width:320px;height:320px;border:none;margin-left:auto;margin-right:auto;}
-.content > p.small{font-size:1em;}
+#canvas{position:relative;width:300px;height:320px;border:none;margin-left:auto;margin-right:auto;}
+.content > p.small{font-size:1em;text-align:left;}
 .content > p + p{margin-top:0.83333em;}
