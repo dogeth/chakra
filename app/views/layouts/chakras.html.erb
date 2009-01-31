@@ -26,10 +26,11 @@
 <body>
 <div class="container">
 	<div class="header yui-g"> 
-		<div class="brand yui-u first"> 
-			<h1 class="name">
+		<div class="brand"> 
+			<h1 class="name<%= " #{@chakra_name}" if @chakra_name %>" >
 				<% link_to(:controller => "chakras", :action => 'index') do %>
 					<img src="<%= "/images/header_222x70.png" %>" alt="The Chakra Goddess Oracle" />
+					<%# kkk= "<img src='#{@title_image}' alt='The Chakra Goddess Oracle' class='right' />" if @title_image %>
 				<% end %>
 			</h1>
 		</div>

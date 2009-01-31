@@ -1,4 +1,4 @@
-<div class="<%="#{@chakra.name.downcase}"%>">
+<% @chakra_name = @chakra.name.downcase %>
 <h2><%= @chakra.name.capitalize %></h2>
 <p><%= @chakra.description %></p>
 <p><%= @chakra.question %></p>
@@ -9,5 +9,4 @@
 	<% end %>
 	<br />
 <% end %>
-</div>
 </div>

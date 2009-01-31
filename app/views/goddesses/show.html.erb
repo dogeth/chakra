@@ -1,8 +1,7 @@
-<div class="<%="#{@goddess.chakra.name.downcase}"%>">
+<% @chakra_name = @goddess.chakra.name.downcase %>
 <h2><%= h "#{@goddess.name.capitalize} :: #{@goddess.tag}" %></h2>
 <p><%= h @goddess.description %></p>
 <h3>Modern Energy</h3>
 <p><%= h @goddess.modern_energy %></p>
 <h3>Do This</h3>
 <p><%= h @goddess.do_this %></p>
-</div>
