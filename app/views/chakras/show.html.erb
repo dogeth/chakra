@@ -1,11 +1,11 @@
-<div class="<%="#{@chakra.name.downcase}"%>">
-<h2><%= @chakra.name.capitalize %></h2>
-<p><%= @chakra.description %></p>
-<p><%= @chakra.question %></p>
+<div class="<%= h @chakra.name.downcase %>">
+<h2><%= h @chakra.name.capitalize %></h2>
+<p><%= h @chakra.description %></p>
+<p><%= h @chakra.question %></p>
 <div id="canvas">
 <% for g in @chakra.goddesses %>
 	<% link_to({:controller => 'goddesses', :action => 'show', :goddess => g.name}, :class => 'move numeric hide') do %>
-		<%= g.number %>
+		<%= h g.number %>
 	<% end %>
 	<br />
 <% end %>
