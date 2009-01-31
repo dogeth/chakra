@@ -34,8 +34,8 @@ $(function() {
 
 		//Calculate points of a circle around the canvas
 	  	var radius = max_canvas_length / 2 - Math.floor(max_object_length / 2); 
-	  	var x_center = Math.floor(canvas_width / 2);
-  		var y_center = Math.floor(canvas_height / 2);
+	  	var x_center = Math.floor(canvas_width / 2) - 30;
+  		var y_center = Math.floor(canvas_height / 2) - 50;
 	  	for (var i = 0; i < steps; i++) {
     	  x_pos[i] = Math.floor(x_center + radius * Math.cos(2 * Math.PI * i / steps)) ;
 	      y_pos[i] = Math.floor(y_center + radius * Math.sin(2 * Math.PI * i / steps)) ;
