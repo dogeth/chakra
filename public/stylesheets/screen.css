@@ -76,8 +76,10 @@ body{font-family:Helvetica,Arial,sans-serif;text-align:left;color:black;margin:0
 a:link,a:visited,a:hover{display:block;text-decoration:none;color:black;}
 h2 a:link,h2 a:visited,h2 a:hover{display:inline;}
 .header,.footer{background:#613131 top left repeat-x;padding:0.83333em;margin:0;font-family:inherit;font-weight:bold;color:white;}
+.header{padding:0.83333em 0;}
 .header *,.header a:link,.header a:active,.header a:visited,
-.footer *,.footer a:link,.footer a:active,.footer a:visited{font-family:inherit;font-weight:bold;color:white;text-decoration:underline;display:inline;}
+.footer *,.footer a:link,.footer a:active,.footer a:visited{font-family:inherit;font-weight:bold;color:white;text-decoration:none;display:inline;}
+.footer *,.footer a:link,.footer a:active,.footer a:visited{text-decoration:underline}
 .header .brand .name{color:white;font-family:inherit;font-size:1.66667em;margin:0;padding:0;}
 .header .button{font-size:0.75em;text-align:center;background-color:transparent;background-position:top center;background-repeat:no-repeat;border:none;height:auto;margin:0;padding:16px 0 0 0;white-space:normal;}
 .header .button:hover{background-color:transparent;}
@@ -96,7 +98,7 @@ h2 a:link,h2 a:visited,h2 a:hover{display:inline;}
 .content > h3,
 .content > h4,
 .content > h5,
-.content > h6{margin:1.6667em 0.83333em 0.83333em 0.83333em;padding:0 0.83333em 0 0.83333em;font-family:inherit;font-size:1.41667em;font-weight:bold;text-shadow:white 0 0.08333em 0;background-color:transparent;border:none;color:rgb(76,86,108);}
+.content > h6{margin:0.58823em;padding:0;font-family:inherit;font-size:1.41667em;font-weight:bold;background-color:transparent;border:none;color:black;}
 .content > h1.panel,
 .content > h2.panel,
 .content > h3.panel,
