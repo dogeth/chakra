@@ -2,7 +2,7 @@
 <div id="canvas">
 <% for chakra in @chakras %>
 	<% link_to({:action => 'show', :chakra => chakra.name}, :class => 'move shape hide') do %>
-		<img src="<%= "/images/#{chakra.colour}_butterfly.gif" %>" alt="<%="#{chakra.name}" %>" />
+		<img src="<%= "/images/#{h chakra.colour}_butterfly.gif" %>" alt="<%= h chakra.name %>" />
 	<% end %>
 <% end %>
 </div>
