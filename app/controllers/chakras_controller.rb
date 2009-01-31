@@ -1,7 +1,5 @@
 class ChakrasController < ApplicationController
   caches_page :index, :select, :show
-  def index
-  end
 
   def select
     @chakras = Chakra.find(:all)
