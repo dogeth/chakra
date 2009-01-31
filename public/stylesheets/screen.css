@@ -77,7 +77,7 @@ a:link,a:visited,a:hover{display:block;text-decoration:none;color:black;}
 h2 a:link,h2 a:visited,h2 a:hover{display:inline;}
 .header,.footer{background:#613131 top left repeat-x;padding:0.83333em;margin:0;font-family:inherit;font-weight:bold;color:white;}
 .header *,.header a:link,.header a:active,.header a:visited,
-.footer *,.footer a:link,.footer a:active,.footer a:visited{font-family:inherit;font-weight:bold;color:white;}
+.footer *,.footer a:link,.footer a:active,.footer a:visited{font-family:inherit;font-weight:bold;color:white;text-decoration:underline;display:inline;}
 .header .brand .name{color:white;font-family:inherit;font-size:1.66667em;margin:0;padding:0;}
 .header .button{font-size:0.75em;text-align:center;background-color:transparent;background-position:top center;background-repeat:no-repeat;border:none;height:auto;margin:0;padding:16px 0 0 0;white-space:normal;}
 .header .button:hover{background-color:transparent;}
