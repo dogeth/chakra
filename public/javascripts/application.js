@@ -1,7 +1,6 @@
 // Place your application-specific JavaScript functions and classes here
 // This file is automatically included by javascript_include_tag :defaults
 $(function() {
-
   	/*
     	Rotation of objects on a canvas
   	*/
@@ -18,7 +17,7 @@ $(function() {
 	  	
 	  	//Hard-coding size of the canvas for now, jQuery not picking up the correct width and height from the style after a refresh
 	  	//var canvas_width = parseInt($("#canvas").width()); var canvas_height = parseInt($("#canvas").height());
-	  	var canvas_width = 300; var canvas_height = 320;
+	  	var canvas_width = 300; var canvas_height = 300;
 	  	
 
 		//Get Offsets, and Maximum object width and height
@@ -34,8 +33,8 @@ $(function() {
 
 		//Calculate points of a circle around the canvas
 	  	var radius = max_canvas_length / 2 - Math.floor(max_object_length / 2); 
-	  	var x_center = Math.floor(canvas_width / 2) - 30;
-  		var y_center = Math.floor(canvas_height / 2) - 50;
+	  	var x_center = Math.floor(canvas_width / 2);
+  		var y_center = Math.floor(canvas_height / 2);
 	  	for (var i = 0; i < steps; i++) {
     	  x_pos[i] = Math.floor(x_center + radius * Math.cos(2 * Math.PI * i / steps)) ;
 	      y_pos[i] = Math.floor(y_center + radius * Math.sin(2 * Math.PI * i / steps)) ;
@@ -58,5 +57,4 @@ $(function() {
 	  		}
 		}
 	}
-
 });
