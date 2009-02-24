@@ -123,6 +123,7 @@ h2 a:link,h2 a:visited,h2 a:hover{display:inline;}
 .content .panel .item,
 .content .panel .item > *:first-child,
 .content .panel .item .title{font-weight:bold;font-size:1em;line-height:1.4706em;color:black;}
+.content .panel .about a:link,.content .panel .about a:active,.content .panel .about a:visited{font-family:inherit;font-weight:bold;font-size:13px;line-height:25px;text-decoration:underline;display:inline;padding:0;margin:0;}
 .content dl.panel dd.item,
 .content dl.panel dd.item > *:first-child{font-weight:normal;color:#324F85;}
 .content dl.panel > dd + dd{border-top:none;font-weight:normal;font-size:0.7647em;padding:0 0.76923em 0.76923em 0.76923em;}
@@ -164,3 +165,4 @@ h2 a:link,h2 a:visited,h2 a:hover{display:inline;}
 .header .brand h1.throat {background: url(../images/lightblue_butterfly.gif) transparent top right no-repeat}
 .header .brand h1.brow {background: url(../images/indigo_butterfly.gif) transparent top right no-repeat}
 .header .brand h1.crown {background: url(../images/purple_butterfly.gif) transparent top right no-repeat}
+

@@ -12,9 +12,9 @@ class CreateGoddesses < ActiveRecord::Migration
 
       t.string :tag
 
-      t.string :modern_energy
+      t.string :modern_energy, :limit => 500
 
-      t.string :do_this
+      t.string :do_this, :limit => 500
 
 
       t.timestamps

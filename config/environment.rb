@@ -75,7 +75,6 @@ Rails::Initializer.run do |config|
     
   SITE_NAME = "The Chakra Goddess Oracle"
   
-  ABOUT_BLURB = "The Chakra Goddess Oracle"
-  
+  ABOUT_BLURB = "The Chakra Goddess Oracle is based on the book by Anita Ryan-Revel, The Goddess Guide to Chakra Vitality.  The oracle uses the power of your intuition to reveal answers or insights that deep down, you knew all along. It features 49 ancient goddesses from various cultures, and presents their stories as lessons for the modern woman. The lessons are entwined with chakra energy to help you further understand the issues afoot."
   
 end

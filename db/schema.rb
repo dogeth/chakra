@@ -28,8 +28,8 @@ ActiveRecord::Schema.define(:version => 20090121034059) do
     t.integer  "number"
     t.string   "description"
     t.string   "tag"
-    t.string   "modern_energy"
-    t.string   "do_this"
+    t.string   "modern_energy", :limit => 500
+    t.string   "do_this",       :limit => 500
     t.datetime "created_at"
     t.datetime "updated_at"
   end
