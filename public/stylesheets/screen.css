@@ -73,7 +73,7 @@ Useful classes defined in this stylesheet:.panel :displays a ul/ol/dl as a round
 html,body{background:#efdfdf top left repeat;margin:0;padding:0;-webkit-text-size-adjust:none;}
 html.list,html.list body{background:white;}
 body{font-family:Helvetica,Arial,sans-serif;text-align:left;color:black;margin:0;padding:0;}
-a:link,a:visited,a:hover{display:block;text-decoration:none;color:black;}
+a:link,a:visited,a:hover{text-decoration:underline;color:black;font-weight:bold;}
 h2 a:link,h2 a:visited,h2 a:hover{display:inline;}
 .header,.footer{background:#613131 top left repeat-x;padding:0.83333em;margin:0;font-family:inherit;font-weight:bold;color:white;}
 .header{padding:0.83333em 0;}
@@ -115,15 +115,14 @@ h2 a:link,h2 a:visited,h2 a:hover{display:inline;}
 .content .panel > *:first-child,
 .content .panel > dt:first-child + dd{border:none;}
 .content .panel .item{padding:0.58823em;margin:0;display:block;}
-.content .panel a.item{padding-right:28px;}
+.content .panel a.item{padding-right:28px;text-decoration:none;}
 .content dl.panel dt a.item{background:none;padding-right:0.58823em;}
 .content .list a:active,
 .content .panel a.item:active{background-color:rgb(217,217,217);}
-.content .panel .item *{font-weight:normal;margin:0;padding:0;font-size:0.7647em;line-height:1.9231em;}
+.content .panel .item > *{font-weight:normal;margin:0;padding:0;font-size:0.7647em;line-height:1.9231em;}
 .content .panel .item,
 .content .panel .item > *:first-child,
 .content .panel .item .title{font-weight:bold;font-size:1em;line-height:1.4706em;color:black;}
-.content .panel .about a:link,.content .panel .about a:active,.content .panel .about a:visited{font-family:inherit;font-weight:bold;font-size:13px;line-height:25px;text-decoration:underline;display:inline;padding:0;margin:0;}
 .content dl.panel dd.item,
 .content dl.panel dd.item > *:first-child{font-weight:normal;color:#324F85;}
 .content dl.panel > dd + dd{border-top:none;font-weight:normal;font-size:0.7647em;padding:0 0.76923em 0.76923em 0.76923em;}
@@ -153,6 +152,7 @@ h2 a:link,h2 a:visited,h2 a:hover{display:inline;}
 .disabled{background-color:#efefef;color:#666;}
 .hide{display:none;}
 .move{position:absolute;border:none;background-color:none;}
+a.move{text-decoration:none;}
 .shape img{border:none;}
 .numeric{font-size:5em;}
 #canvas{position:relative;width:300px;height:300px;border:none;margin-left:auto;margin-right:auto;}
