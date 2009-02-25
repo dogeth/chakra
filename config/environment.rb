@@ -73,7 +73,7 @@ Rails::Initializer.run do |config|
   # Please note that observers generated using script/generate observer need to have an _observer suffix
   # config.active_record.observers = :cacher, :garbage_collector, :forum_observer
     
-  SITE_NAME = "The Chakra Goddess Oracle"
+  SITE_NAME = "The Oracle"
   
   ABOUT_BLURB = "The Chakra Goddess Oracle is based on the book by Anita Ryan-Revel, The Goddess Guide to Chakra Vitality.  The oracle uses the power of your intuition to reveal answers or insights that deep down, you knew all along. It features 49 ancient goddesses from various cultures, and presents their stories as lessons for the modern woman. The lessons are entwined with chakra energy to help you further understand the issues afoot."
   
