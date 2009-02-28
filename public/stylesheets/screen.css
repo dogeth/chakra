@@ -123,6 +123,8 @@ h2 a:link,h2 a:visited,h2 a:hover{display:inline;}
 .content .panel .item,
 .content .panel .item > *:first-child,
 .content .panel .item .title{font-weight:bold;font-size:1em;line-height:1.4706em;color:black;}
+.content .panel .item > p {margin-bottom:1em;}
+.content .panel .item > p:last-child{margin-bottom:0;}
 .content dl.panel dd.item,
 .content dl.panel dd.item > *:first-child{font-weight:normal;color:#324F85;}
 .content dl.panel > dd + dd{border-top:none;font-weight:normal;font-size:0.7647em;padding:0 0.76923em 0.76923em 0.76923em;}
