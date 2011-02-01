@@ -1,0 +1,170 @@
+/** 
+Base Styles
+Defines the base styling for elements. Imports and relies on the YUI CSS frameworks,
+such as the reset,fonts,grids and base stylesheets.
+Useful classes defined in this stylesheet:.even,.alt :use either of these classes on every other row of a table for zebra striping
+.highlight :set this class on an element to highlight it in yellow
+.error :set this class on an element to display it as an error message box
+.info :set this class on an element to display it as an informational message box
+.notice :set this class on an element to display it as a notice/warning box
+.success :set this class on an element to display it as a success message box
+.box :set this class on an element to display it as a box with a border
+2008-08-20:Created by Lachlan,based on the Blueprint CSS framework[2].
+2008-12-16:Added .info class.
+[1] http://developer.yahoo.com/yui/reset/
+[2] http://code.google.com/p/blueprintcss/
+**/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,
+p,blockquote,pre,a,abbr,acronym,address,code,del,dfn,
+em,img,q,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+body{background-color:white;color:#222;line-height:1.5;font-size:75%;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;margin:1em;text-align:left;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;color:#111;}
+h1{font-size:3em;line-height:1;margin-bottom:0.5em;}
+h2{font-size:2em;margin-bottom:0.75em;}
+h3{font-size:1.5em;line-height:1;margin-bottom:1em;}
+h4{font-size:1.2em;line-height:1.25;margin-bottom:1.25em;height:1.25em;}
+h5{font-size:1em;font-weight:bold;margin-bottom:1.5em;}
+h6{font-size:1em;font-weight:bold;}
+h1 img,h2 img,h3 img,h4 img,h5 img,h6 img{margin:0;}
+p{margin:0 0 1.5em 0;}
+p img{float:left;margin:1.5em 1.5em 1.5em 0;padding:0;}
+p img.right{float:right;margin:1.5em 0 1.5em 1.5em;}
+a,a:link{color:#0000ee;text-decoration:underline;}
+a:focus,a:hover,a:active{color:#c61a1a;}
+a:visited{color:#551a8b;}
+blockquote{margin:1.5em;color:#666;font-style:italic;}
+strong{font-weight:bold;}
+em,dfn{font-style:italic;}
+dfn{font-weight:bold;}
+sup,sub{line-height:0;}
+abbr,acronym{border-bottom:1px dotted #666;}
+address{margin:0 0 1.5em 0;font-style:italic;}
+del{color:#666;}
+pre,code{margin:1.5em 0;white-space:pre;}
+pre,code,tt,kbd,samp{font:1em 'Andale Mono','Lucida Console',monospace;line-height:1.5;}
+li ul,li ol{margin:0 1.5em;}
+ul,ol{margin:0 1.5em 1.5em 1.5em;}
+ul li{list-style:disc outside;}
+ol li{list-style:decimal outside;}
+dl{margin:0 0 1.5em 0;}
+dl dt{font-weight:bold;}
+dl dd{margin-left:1.5em;}
+table{margin-bottom:1.5em;border-collapse:collapse;}
+th{font-weight:bold;}
+tbody th{text-align:right;}
+th,td{padding:0.66667em 0.41667em 0.75em 0.41667em;border:0.08333em solid #ccc;}
+tr:first-child th,tr:first-child td{padding-bottom:0.66667em;}
+tr.even td,.stripe tr.even td{background:#eee;}
+tfoot{font-style:italic;}
+caption{text-align:center;}
+input{margin-right:0.25em;}
+label{font-weight:normal;}
+select{width:auto;margin:0;}
+fieldset{padding:1.333333em;margin:0 0 1.5em 0;border:0.08333em solid #ccc;}
+legend{font-weight:bold;font-size:1em;}
+/** 
+Mobile Styles
+Defines the mobile device styling for elements. Imports and relies on the base stylesheet.
+Useful classes defined in this stylesheet:.panel :displays a ul/ol/dl as a rounded corner iPhone-like preference panel
+.list :displays a ul/ol/dl as a full-bleed iPhone-like list
+2008-12-29:Created by Lachlan.
+**/
+html,body{background:#efdfdf top left repeat;margin:0;padding:0;-webkit-text-size-adjust:none;}
+html.list,html.list body{background:white;}
+body{font-family:Helvetica,Arial,sans-serif;text-align:left;color:black;margin:0;padding:0;}
+a:link,a:visited,a:hover{text-decoration:underline;color:black;font-weight:bold;}
+h2 a:link,h2 a:visited,h2 a:hover{display:inline;}
+.header,.footer{background:#613131 top left repeat-x;padding:0.83333em;margin:0;font-family:inherit;font-weight:bold;color:white;}
+.header{padding:0.83333em 0;}
+.header *,.header a:link,.header a:active,.header a:visited,
+.footer *,.footer a:link,.footer a:active,.footer a:visited{font-family:inherit;font-weight:bold;color:white;text-decoration:none;display:inline;}
+.footer *,.footer a:link,.footer a:active,.footer a:visited{text-decoration:underline}
+.header .brand .name{color:white;font-family:inherit;font-size:1.66667em;margin:0;padding:0;}
+.header .button{font-size:0.75em;text-align:center;background-color:transparent;background-position:top center;background-repeat:no-repeat;border:none;height:auto;margin:0;padding:16px 0 0 0;white-space:normal;}
+.header .button:hover{background-color:transparent;}
+.nav{text-align:right;background:#bababa url(../images/gradient_e3e3e3_bababa_2x30.png) repeat-x top left;font-weight:bold;margin:0;}
+.nav .main{margin:0;padding:0.08333em 0.16667em 0 0.5em;}
+.nav li{display:inline;list-style-type:none;margin:0 0.16667em 0 0;padding:0;white-space:nowrap;}
+.nav .main li{float:left;margin:0;}
+.nav .main li a{display:block;text-decoration:none;color:#666;padding:0.5em 1em;margin:0;}
+.nav .main a:hover,.nav .main .selected a,.nav .main .selected a:hover{color:rgb(152,0,46);}
+.nav .main .selected{background:white url(../images/tab_right_1000x30.png) no-repeat top right;}
+.nav .main .selected a,.nav .main .selected a:hover{background:transparent url(../images/tab_left_7x30.png) no-repeat top left;}
+.content{padding:0 0.75em;}
+.list .content{padding:0;}
+.content > h1,
+.content > h2,
+.content > h3,
+.content > h4,
+.content > h5,
+.content > h6{margin:0.58823em;padding:0;font-family:inherit;font-size:1.41667em;font-weight:bold;background-color:transparent;border:none;color:black;}
+.content > h1.panel,
+.content > h2.panel,
+.content > h3.panel,
+.content > h4.panel,
+.content > h5.panel,
+.content > h6.panel{color:black;}
+.content > p{margin:0 0.83333em 0 0.83333em;padding:0;font-family:inherit;font-size:1.41667em;font-weight:normal;color:black;text-align:center;background-color:transparent;border:none;}
+.content > *:first-child{margin-top:0.83333em;}
+.content input{margin:0;border:none;background:none;font-size:1em;font-weight:normal;width:10em;}
+.content .panel{font-size:1.41667em;background-color:white;display:block;margin:0.52941em 0;padding:0;border:0.05882em solid rgb(171,171,171);-webkit-border-radius:0.47058em;-moz-border-radius:0.47058em;border-radius:0.47058em;}
+.content .panel > *,
+.content .panel *{font-size:1em;margin:0;padding:0;text-align:left;color:black;text-shadow:none;font-weight:normal;}
+.content .panel > *{display:block;border-top:0.05882em solid rgb(171,171,171);}
+.content .panel > *:first-child,
+.content .panel > dt:first-child + dd{border:none;}
+.content .panel .item{padding:0.58823em;margin:0;display:block;}
+.content .panel a.item{padding-right:28px;text-decoration:none;}
+.content dl.panel dt a.item{background:none;padding-right:0.58823em;}
+.content .list a:active,
+.content .panel a.item:active{background-color:rgb(217,217,217);}
+.content .panel .item > *{font-weight:normal;margin:0;padding:0;font-size:0.7647em;line-height:1.9231em;}
+.content .panel .item,
+.content .panel .item > *:first-child,
+.content .panel .item .title{font-weight:bold;font-size:1em;line-height:1.4706em;color:black;}
+.content .panel .item > p {margin-bottom:1em;}
+.content .panel .item > p:last-child{margin-bottom:0;}
+.content dl.panel dd.item,
+.content dl.panel dd.item > *:first-child{font-weight:normal;color:#324F85;}
+.content dl.panel > dd + dd{border-top:none;font-weight:normal;font-size:0.7647em;padding:0 0.76923em 0.76923em 0.76923em;}
+.content dl.panel > dt > *,
+.content dl.panel > dd > *{padding:0.58823em;margin:0;}
+.content dl.panel > dt{float:left;clear:left;}
+.content dl.panel > dt > *{font-weight:bold;}
+.content dl.panel > dd{text-align:right;font-weight:normal;color:#324F85;}
+.content dd a{color:#324F85;}
+.content dl.panel > dt > a{padding-bottom:0;}
+.content dl.panel > dd > a,
+.content dl.panel > dd > a:first-child{padding:0.76923em 28px 0.76923em 1.53846em;font-size:0.7647em;line-height:1.9231em;font-weight:normal;text-align:right;color:#324F85;}
+.content .panel a.item,
+.content dl.panel > dd > a,
+.content dl.panel > dd > a:first-child,
+.content .list > li > a:first-child{background:transparent url(../images/chevron_18x13.png) center right no-repeat;}
+.content .list{font-size:1.41667em;font-weight:bold;color:black;background-color:white;margin:0;padding:0;height:100%;}
+.content .list > li.heading{background:#9f9f9f url(../images/list_header_2x23.png) top left repeat-x;height:23px;padding-top:0;padding-bottom:0;border:none;}
+.content .list > li h1,
+.content .list > li h2,
+.content .list > li h3,
+.content .list > li h4,
+.content .list > li h5,
+.content .list > li h6{font-size:1em;line-height:1.3529em;margin:0;padding:0 0.58823em;color:white;text-shadow:#333 0 0.08333em 0;}
+.content .list > li{list-style-type:none;border-bottom:0.05882em solid rgb(217,217,217);}
+.content .list > li > *{padding:0.58823em;display:block;}
+.disabled{background-color:#efefef;color:#666;}
+.hide{display:none;}
+.move{position:absolute;border:none;background-color:none;}
+a.move{text-decoration:none;}
+.shape img{border:none;}
+.numeric{font-size:5em;}
+#canvas{position:relative;width:300px;height:300px;border:none;margin-left:auto;margin-right:auto;}
+.content > p.small{font-size:1em;text-align:left;}
+.content > p + p{margin-top:0.83333em;}
+.header .brand h1.base {background: url(../images/red_butterfly.gif) transparent top right no-repeat}
+.header .brand h1.sacral {background: url(../images/orange_butterfly.gif) transparent top right no-repeat}
+.header .brand h1.solar {background: url(../images/yellow_butterfly.gif) transparent top right no-repeat}
+.header .brand h1.heart {background: url(../images/green_butterfly.gif) transparent top right no-repeat}
+.header .brand h1.throat {background: url(../images/lightblue_butterfly.gif) transparent top right no-repeat}
+.header .brand h1.brow {background: url(../images/indigo_butterfly.gif) transparent top right no-repeat}
+.header .brand h1.crown {background: url(../images/purple_butterfly.gif) transparent top right no-repeat}
+
